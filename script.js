@@ -12,10 +12,10 @@ const dayHour = new Date().getHours();
 weekday.innerHTML = weekday.textContent + day;
 currentDate.innerHTML = date;
 
-if( dayHour > 12 && dayHour < 18 ) {
-    hour.innerHTML = "Good afternoon,";
-} else if (dayHour < 12 && dayHour > 6) {
+if(dayHour >= 6 && dayHour < 12) {
     hour.innerHTML = "Good morning,";
+} else if (dayHour >= 12 && dayHour < 18) {
+    hour.innerHTML = "Good afternoon,";
 } else{
     hour.innerHTML = "Good evening,";
 }
