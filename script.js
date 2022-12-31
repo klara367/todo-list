@@ -36,6 +36,7 @@ input.addEventListener("change", () => {
     // create task
     const inputText = document.createElement("input");
     inputText.type = "text";
+    inputText.className = "task";
     inputText.setAttribute("readonly", true);
     inputText.value = input.value;
     input.value = "";

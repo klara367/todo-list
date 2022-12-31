@@ -60,7 +60,7 @@ h1 {
 
 .main {
     min-width: 30vw;
-    padding: 3rem 2rem;
+    padding: 2.5rem 2rem;
     background-color: var(--primary-main-card-color);
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@ input::placeholder {
 .item-wrapper {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--neutral-border-modal-color);
+    border-bottom: 1px solid var(--neutral-border-color);
     padding-block: 0.5rem;
     width: 25vw;
 }
@@ -236,6 +236,7 @@ button:active {
     .main {
         width: 50vw;
     }
+
     .task-input, .item-wrapper {
         width: 40vw; 
     }
@@ -245,7 +246,12 @@ button:active {
         width: 100vw;
         min-height: 100vh;
     }
+
     .task-input, .item-wrapper {
         width: 80vw; 
+    }
+
+    .task {
+        width: 30vw;
     }
 }
